@@ -43,43 +43,43 @@ const Services = () => {
   ];
 
   return (
-    <section id="servicos" className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-blue-50 to-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="servicos" className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28 bg-gradient-to-br from-blue-50 to-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Section Header */}
-        <div className="text-center mb-12 sm:mb-16 animate-fade-in-up">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 animate-fade-in-up">
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-primary mb-3 sm:mb-4 md:mb-6">
             Nossos Serviços
           </h2>
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto px-2 sm:px-4">
             Oferecemos soluções completas para purificação de água com atendimento especializado e produtos de qualidade
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="service-card animate-scale-in p-6 sm:p-8"
+              className="service-card animate-scale-in p-4 sm:p-6 md:p-8 lg:p-10"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="bg-primary/10 w-14 h-14 sm:w-16 sm:h-16 rounded-xl flex items-center justify-center mb-4 sm:mb-6">
-                <service.icon className="h-7 w-7 sm:h-8 sm:w-8 text-primary" />
+              <div className="bg-primary/10 w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-18 lg:h-18 rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-6">
+                <service.icon className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 lg:h-9 lg:w-9 text-primary" />
               </div>
               
-              <h3 className="text-lg sm:text-xl font-semibold text-primary mb-3 sm:mb-4">
+              <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-primary mb-2 sm:mb-3 md:mb-4">
                 {service.title}
               </h3>
               
-              <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-3 sm:mb-4 md:mb-6 leading-relaxed">
                 {service.description}
               </p>
               
-              <ul className="space-y-2">
+              <ul className="space-y-1 sm:space-y-2">
                 {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-xs sm:text-sm text-muted-foreground">
-                    <div className="w-2 h-2 bg-accent rounded-full mr-3 flex-shrink-0"></div>
-                    {feature}
+                  <li key={featureIndex} className="flex items-center text-xs sm:text-sm md:text-base text-muted-foreground">
+                    <div className="w-2 h-2 bg-accent rounded-full mr-2 sm:mr-3 flex-shrink-0"></div>
+                    <span className="break-words">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -88,26 +88,26 @@ const Services = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-12 sm:mt-16">
-          <div className="bg-white/80 backdrop-blur-sm border border-blue-100/50 rounded-2xl p-6 sm:p-8 max-w-2xl mx-auto">
-            <h3 className="text-xl sm:text-2xl font-semibold text-primary mb-3 sm:mb-4">
+        <div className="text-center mt-8 sm:mt-12 md:mt-16 lg:mt-20">
+          <div className="bg-white/80 backdrop-blur-sm border border-blue-100/50 rounded-2xl p-4 sm:p-6 md:p-8 lg:p-10 max-w-3xl mx-auto">
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-primary mb-2 sm:mb-3 md:mb-4">
               Precisa de Atendimento?
             </h3>
-            <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 px-4">
+            <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-4 sm:mb-6 md:mb-8 px-2 sm:px-4">
               Entre em contato conosco para agendar um serviço ou esclarecer suas dúvidas
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center px-2 sm:px-4">
               <a 
                 href="https://wa.me/5516981552628" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="btn-primary w-full sm:w-auto"
+                className="btn-primary w-full sm:w-auto text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4"
               >
                 Solicitar Orçamento
               </a>
               <a 
                 href="tel:16981552628"
-                className="btn-outline w-full sm:w-auto"
+                className="btn-outline w-full sm:w-auto text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4"
               >
                 Ligar Agora
               </a>
