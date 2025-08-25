@@ -43,42 +43,42 @@ const Services = () => {
   ];
 
   return (
-    <section id="servicos" className="py-20 bg-gradient-to-br from-blue-50 to-white">
-      <div className="container mx-auto px-4">
+    <section id="servicos" className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-blue-50 to-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in-up">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4">
             Nossos Serviços
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
             Oferecemos soluções completas para purificação de água com atendimento especializado e produtos de qualidade
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="service-card animate-scale-in"
+              className="service-card animate-scale-in p-6 sm:p-8"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="bg-primary/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
-                <service.icon className="h-8 w-8 text-primary" />
+              <div className="bg-primary/10 w-14 h-14 sm:w-16 sm:h-16 rounded-xl flex items-center justify-center mb-4 sm:mb-6">
+                <service.icon className="h-7 w-7 sm:h-8 sm:w-8 text-primary" />
               </div>
               
-              <h3 className="text-xl font-semibold text-primary mb-4">
+              <h3 className="text-lg sm:text-xl font-semibold text-primary mb-3 sm:mb-4">
                 {service.title}
               </h3>
               
-              <p className="text-muted-foreground mb-6">
+              <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 leading-relaxed">
                 {service.description}
               </p>
               
               <ul className="space-y-2">
                 {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
-                    <div className="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                  <li key={featureIndex} className="flex items-center text-xs sm:text-sm text-muted-foreground">
+                    <div className="w-2 h-2 bg-accent rounded-full mr-3 flex-shrink-0"></div>
                     {feature}
                   </li>
                 ))}
@@ -88,26 +88,26 @@ const Services = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-16">
-          <div className="bg-white/80 backdrop-blur-sm border border-blue-100/50 rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-semibold text-primary mb-4">
+        <div className="text-center mt-12 sm:mt-16">
+          <div className="bg-white/80 backdrop-blur-sm border border-blue-100/50 rounded-2xl p-6 sm:p-8 max-w-2xl mx-auto">
+            <h3 className="text-xl sm:text-2xl font-semibold text-primary mb-3 sm:mb-4">
               Precisa de Atendimento?
             </h3>
-            <p className="text-muted-foreground mb-6">
+            <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 px-4">
               Entre em contato conosco para agendar um serviço ou esclarecer suas dúvidas
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
               <a 
                 href="https://wa.me/5516981552628" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="btn-primary"
+                className="btn-primary w-full sm:w-auto"
               >
                 Solicitar Orçamento
               </a>
               <a 
                 href="tel:16981552628"
-                className="btn-outline"
+                className="btn-outline w-full sm:w-auto"
               >
                 Ligar Agora
               </a>
