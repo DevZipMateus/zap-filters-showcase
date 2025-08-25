@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
@@ -29,8 +28,9 @@ const Contact = () => {
                   <div className="min-w-0">
                     <h4 className="font-semibold text-foreground mb-1 text-sm sm:text-base">Endereço</h4>
                     <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                      Avenida Jornalista Roque de Rosa, 881<br />
-                      Santo André - SP
+                      Av. Jrn. Roque de Rosa, 881<br />
+                      Jardim Paulista, Ibitinga - SP<br />
+                      CEP: 14940-000
                     </p>
                   </div>
                 </div>
@@ -133,7 +133,7 @@ const Contact = () => {
             <h3 className="text-xl sm:text-2xl font-bold text-primary mb-4 sm:mb-6">Nossa Localização</h3>
             <div className="aspect-video rounded-xl overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2038260861596!2d-46.54649762408367!3d-23.569888678721047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce590c5c3c7525%3A0x45b4c8a4b9c5d8e7!2sAvenida%20Jornalista%20Roque%20de%20Rosa%2C%20881%20-%20Vila%20Assun%C3%A7%C3%A3o%2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009031-260!5e0!3m2!1spt-BR!2sbr!4v1703883600000!5m2!1spt-BR!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3716.4854903928894!2d-48.83429892518015!3d-21.751665097049472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8d4f5a5f7c5f7%3A0x8c5a5a5a5a5a5a5a!2sAv.%20Jrn.%20Roque%20de%20Rosa%2C%20881%20-%20Jardim%20Paulista%2C%20Ibitinga%20-%20SP%2C%2014940-000!5e0!3m2!1spt-BR!2sbr!4v1703883600000!5m2!1spt-BR!2sbr"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -145,7 +145,7 @@ const Contact = () => {
             </div>
             <div className="mt-3 sm:mt-4 text-center">
               <a 
-                href="https://maps.app.goo.gl/78xDzg9JdwzDwoSu9" 
+                href="https://www.google.com/maps/place/Av.+Jrn.+Roque+de+Rosa,+881+-+Jardim+Paulista,+Ibitinga+-+SP,+14940-000" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-2 text-primary hover:text-primary/80 font-semibold transition-colors text-sm sm:text-base"
