@@ -23,19 +23,6 @@ const Hero = () => {
       {/* Gradient overlay for better text readability */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-accent/60 to-brand-blue-500/70" />
 
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 animate-float">
-          <Droplets className="h-20 w-20 text-white" />
-        </div>
-        <div className="absolute top-40 right-20 animate-float" style={{ animationDelay: '2s' }}>
-          <Shield className="h-16 w-16 text-white" />
-        </div>
-        <div className="absolute bottom-40 left-20 animate-float" style={{ animationDelay: '4s' }}>
-          <Award className="h-24 w-24 text-white" />
-        </div>
-      </div>
-
       <div className="container mx-auto px-4 text-center text-white relative z-10">
         <div className="max-w-4xl mx-auto animate-fade-in-up">
           {/* Main heading */}
