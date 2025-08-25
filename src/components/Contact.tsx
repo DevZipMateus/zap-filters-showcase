@@ -133,7 +133,7 @@ const Contact = () => {
             <h3 className="text-2xl font-bold text-primary mb-6">Nossa Localização</h3>
             <div className="aspect-video rounded-xl overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1234567890123!2d-48.98765432109876!3d-21.76543210987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDQ1JzU1LjYiUyA0OMKwNTknMTUuNiJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2038260861596!2d-46.54649762408367!3d-23.569888678721047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce590c5c3c7525%3A0x45b4c8a4b9c5d8e7!2sAvenida%20Jornalista%20Roque%20de%20Rosa%2C%20881%20-%20Vila%20Assun%C3%A7%C3%A3o%2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009031-260!5e0!3m2!1spt-BR!2sbr!4v1703883600000!5m2!1spt-BR!2sbr"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
