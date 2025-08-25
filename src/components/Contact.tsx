@@ -1,248 +1,158 @@
 
-import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Instagram, Facebook, MessageCircle } from 'lucide-react';
+import React from 'react';
+import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Create WhatsApp message
-    const whatsappMessage = encodeURIComponent(
-      `Olá! Gostaria de solicitar informações:\n\n` +
-      `Nome: ${formData.name}\n` +
-      `Email: ${formData.email}\n` +
-      `Telefone: ${formData.phone}\n` +
-      `Mensagem: ${formData.message}`
-    );
-    
-    // Open WhatsApp with pre-filled message
-    window.open(`https://wa.me/5516981552628?text=${whatsappMessage}`, '_blank');
-    
-    // Reset form
-    setFormData({ name: '', email: '', phone: '', message: '' });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
   return (
-    <section id="contato" className="py-20 bg-gradient-to-br from-primary/5 to-blue-50">
+    <section id="contato" className="py-20 bg-gradient-to-br from-blue-50 to-white">
       <div className="container mx-auto px-4">
-        {/* Section Header */}
-        <div className="text-center mb-16 animate-fade-in-up">
+        <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             Entre em Contato
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Estamos prontos para atender você. Entre em contato conosco para agendar um serviço ou esclarecer suas dúvidas
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Estamos prontos para atender você com o melhor em purificadores e bebedouros
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Contact Info */}
-          <div className="lg:col-span-1 space-y-6">
-            {/* Phone */}
-            <div className="bg-white/80 backdrop-blur-sm border border-blue-100/50 rounded-2xl p-6 animate-scale-in">
-              <div className="flex items-start space-x-4">
-                <div className="bg-primary/10 p-3 rounded-xl">
-                  <Phone className="h-6 w-6 text-primary" />
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+          {/* Contact Information */}
+          <div className="space-y-8">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-blue-100/50">
+              <h3 className="text-2xl font-bold text-primary mb-6">Informações de Contato</h3>
+              
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-primary/10 p-3 rounded-lg">
+                    <MapPin className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Endereço</h4>
+                    <p className="text-muted-foreground">
+                      Avenida Jornalista Roque de Rosa, 881<br />
+                      Santo André - SP
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-semibold text-primary mb-2">Telefone</h3>
-                  <a 
-                    href="tel:16981552628" 
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    (16) 98155-2628
-                  </a>
-                </div>
-              </div>
-            </div>
 
-            {/* Email */}
-            <div className="bg-white/80 backdrop-blur-sm border border-blue-100/50 rounded-2xl p-6 animate-scale-in" style={{ animationDelay: '0.1s' }}>
-              <div className="flex items-start space-x-4">
-                <div className="bg-primary/10 p-3 rounded-xl">
-                  <Mail className="h-6 w-6 text-primary" />
+                <div className="flex items-start space-x-4">
+                  <div className="bg-primary/10 p-3 rounded-lg">
+                    <Phone className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Telefone</h4>
+                    <a 
+                      href="https://wa.me/5516981552628" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-primary hover:text-primary/80 transition-colors"
+                    >
+                      (16) 98155-2628
+                    </a>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-semibold text-primary mb-2">Email</h3>
-                  <a 
-                    href="mailto:laineramos2251@gmail.com" 
-                    className="text-muted-foreground hover:text-primary transition-colors break-all"
-                  >
-                    laineramos2251@gmail.com
-                  </a>
-                </div>
-              </div>
-            </div>
 
-            {/* Address */}
-            <div className="bg-white/80 backdrop-blur-sm border border-blue-100/50 rounded-2xl p-6 animate-scale-in" style={{ animationDelay: '0.2s' }}>
-              <div className="flex items-start space-x-4">
-                <div className="bg-primary/10 p-3 rounded-xl">
-                  <MapPin className="h-6 w-6 text-primary" />
+                <div className="flex items-start space-x-4">
+                  <div className="bg-primary/10 p-3 rounded-lg">
+                    <Mail className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">E-mail</h4>
+                    <a 
+                      href="mailto:laineramos2251@gmail.com"
+                      className="text-primary hover:text-primary/80 transition-colors"
+                    >
+                      laineramos2251@gmail.com
+                    </a>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-semibold text-primary mb-2">Endereço</h3>
-                  <p className="text-muted-foreground">
-                    Avenida Jornalista Roque de Rosa, 881<br />
-                    Santo André
-                  </p>
-                </div>
-              </div>
-            </div>
 
-            {/* Hours */}
-            <div className="bg-white/80 backdrop-blur-sm border border-blue-100/50 rounded-2xl p-6 animate-scale-in" style={{ animationDelay: '0.3s' }}>
-              <div className="flex items-start space-x-4">
-                <div className="bg-primary/10 p-3 rounded-xl">
-                  <Clock className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-primary mb-2">Horário</h3>
-                  <div className="text-muted-foreground space-y-1">
-                    <p>Seg - Sex: 08:30 - 18:00</p>
-                    <p>Sábado: 09:00 - 13:00</p>
+                <div className="flex items-start space-x-4">
+                  <div className="bg-primary/10 p-3 rounded-lg">
+                    <Clock className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Horário de Funcionamento</h4>
+                    <div className="text-muted-foreground space-y-1">
+                      <p>Segunda a Sexta: 08:30 às 18:00</p>
+                      <p>Sábado: 09:00 às 13:00</p>
+                      <p>Domingo: Fechado</p>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              {/* Social Media */}
+              <div className="mt-8 pt-8 border-t border-blue-100">
+                <h4 className="font-semibold text-foreground mb-4">Nos siga nas redes sociais</h4>
+                <div className="flex space-x-4">
+                  <a 
+                    href="https://www.instagram.com/zapfiltros" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-primary/10 text-primary hover:bg-primary hover:text-white p-3 rounded-lg transition-all duration-300"
+                  >
+                    <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                  </a>
+                  <a 
+                    href="https://www.facebook.com/zapfiltrosibitinga" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-primary/10 text-primary hover:bg-primary hover:text-white p-3 rounded-lg transition-all duration-300"
+                  >
+                    <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
 
-            {/* Social Media */}
-            <div className="bg-white/80 backdrop-blur-sm border border-blue-100/50 rounded-2xl p-6 animate-scale-in" style={{ animationDelay: '0.4s' }}>
-              <h3 className="font-semibold text-primary mb-4">Redes Sociais</h3>
-              <div className="flex space-x-4">
-                <a 
-                  href="https://www.instagram.com/zapfiltros" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="bg-primary/10 p-3 rounded-xl hover:bg-primary hover:text-white transition-all duration-300"
-                  aria-label="Instagram da Zap Filtros"
-                >
-                  <Instagram className="h-5 w-5" />
-                </a>
-                <a 
-                  href="https://www.facebook.com/zapfiltrosibitinga" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="bg-primary/10 p-3 rounded-xl hover:bg-primary hover:text-white transition-all duration-300"
-                  aria-label="Facebook da Zap Filtros"
-                >
-                  <Facebook className="h-5 w-5" />
-                </a>
-              </div>
+            {/* WhatsApp CTA */}
+            <div className="bg-gradient-to-r from-green-500 to-green-600 rounded-2xl p-8 text-white text-center">
+              <h3 className="text-2xl font-bold mb-4">Atendimento Rápido</h3>
+              <p className="mb-6 opacity-90">
+                Entre em contato conosco pelo WhatsApp para um atendimento personalizado
+              </p>
+              <a 
+                href="https://wa.me/5516981552628" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 bg-white text-green-600 font-semibold px-8 py-4 rounded-xl hover:bg-green-50 transition-colors"
+              >
+                <Phone className="h-5 w-5" />
+                <span>Falar no WhatsApp</span>
+              </a>
             </div>
           </div>
 
-          {/* Contact Form and Map */}
-          <div className="lg:col-span-2 space-y-8">
-            {/* Contact Form */}
-            <div className="bg-white/80 backdrop-blur-sm border border-blue-100/50 rounded-2xl p-8 animate-scale-in" style={{ animationDelay: '0.5s' }}>
-              <h3 className="text-2xl font-semibold text-primary mb-6">
-                Envie sua Mensagem
-              </h3>
-              
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-primary mb-2">
-                      Nome *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-blue-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
-                      placeholder="Seu nome completo"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-primary mb-2">
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-blue-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
-                      placeholder="seu@email.com"
-                    />
-                  </div>
-                </div>
-                
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-primary mb-2">
-                    Telefone
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-blue-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
-                    placeholder="(16) 99999-9999"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-primary mb-2">
-                    Mensagem *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={4}
-                    className="w-full px-4 py-3 border border-blue-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 resize-none"
-                    placeholder="Descreva como podemos ajudá-lo..."
-                  />
-                </div>
-                
-                <button 
-                  type="submit"
-                  className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-6 py-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2"
-                >
-                  <MessageCircle className="h-5 w-5" />
-                  <span>Enviar via WhatsApp</span>
-                </button>
-              </form>
-            </div>
-
-            {/* Map */}
-            <div className="bg-white/80 backdrop-blur-sm border border-blue-100/50 rounded-2xl p-2 animate-scale-in" style={{ animationDelay: '0.6s' }}>
+          {/* Map */}
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-blue-100/50">
+            <h3 className="text-2xl font-bold text-primary mb-6">Nossa Localização</h3>
+            <div className="aspect-video rounded-xl overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.8642857859863!2d-48.82474!3d-21.7573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8d4c7a8b3b647%3A0x7f4e1e4e4e4e4e4e!2sAv.%20Jornalista%20Roque%20de%20Rosa%2C%20881%20-%20Vila%20Esperan%C3%A7a%2C%20Araraquara%20-%20SP!5e0!3m2!1spt!2sbr!4v1625000000000!5m2!1spt!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1234567890123!2d-48.98765432109876!3d-21.76543210987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDQ1JzU1LjYiUyA0OMKwNTknMTUuNiJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
                 width="100%"
-                height="300"
+                height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
-                referrerPolicy="no-referrer-when-cross-origin"
-                className="rounded-xl"
-                title="Localização da Zap Filtros"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localização Zap Filtros"
               />
+            </div>
+            <div className="mt-4 text-center">
+              <a 
+                href="https://maps.app.goo.gl/78xDzg9JdwzDwoSu9" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 text-primary hover:text-primary/80 font-semibold transition-colors"
+              >
+                <MapPin className="h-4 w-4" />
+                <span>Ver no Google Maps</span>
+              </a>
             </div>
           </div>
         </div>
