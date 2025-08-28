@@ -29,7 +29,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/788c0055-8be0-451a-9bb9-444b8d9230f6.png" 
+              src="/lovable-uploads/1250d4c5-fe86-426b-825d-4cb14b5de79a.png" 
               alt="Zap Filtros Multimarcas" 
               className="h-10 w-auto md:h-12"
             />
@@ -65,9 +65,14 @@ const Header = () => {
               href="https://wa.me/5516981552628" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="btn-primary"
+              className="btn-primary flex items-center space-x-2"
             >
-              WhatsApp
+              <img 
+                src="/lovable-uploads/1250d4c5-fe86-426b-825d-4cb14b5de79a.png" 
+                alt="WhatsApp" 
+                className="h-4 w-4"
+              />
+              <span>WhatsApp</span>
             </a>
           </nav>
 
@@ -114,9 +119,14 @@ const Header = () => {
                   href="https://wa.me/5516981552628" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="btn-primary w-full text-center block"
+                  className="btn-primary w-full text-center flex items-center justify-center space-x-2"
                 >
-                  WhatsApp
+                  <img 
+                    src="/lovable-uploads/1250d4c5-fe86-426b-825d-4cb14b5de79a.png" 
+                    alt="WhatsApp" 
+                    className="h-4 w-4"
+                  />
+                  <span>WhatsApp</span>
                 </a>
               </div>
             </nav>

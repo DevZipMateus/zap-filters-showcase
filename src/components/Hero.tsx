@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Phone } from 'lucide-react';
 
 const Hero = () => {
   const scrollToServices = () => {
@@ -64,7 +63,11 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="flex items-center justify-center space-x-2 bg-green-500/20 text-white border border-green-400/60 hover:bg-green-500 hover:text-white hover:border-green-500 font-semibold px-6 sm:px-8 lg:px-10 py-3 sm:py-4 lg:py-5 rounded-xl transition-all duration-300 w-full sm:w-auto min-w-0 flex-shrink-0 text-sm sm:text-base lg:text-lg"
             >
-              <Phone className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 flex-shrink-0" />
+              <img 
+                src="/lovable-uploads/1250d4c5-fe86-426b-825d-4cb14b5de79a.png" 
+                alt="WhatsApp" 
+                className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 flex-shrink-0"
+              />
               <span className="whitespace-nowrap">Fale Conosco</span>
             </a>
           </div>

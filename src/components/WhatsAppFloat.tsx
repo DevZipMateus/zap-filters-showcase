@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { MessageCircle } from 'lucide-react';
 
 const WhatsAppFloat = () => {
   return (
@@ -8,10 +7,14 @@ const WhatsAppFloat = () => {
       href="https://wa.me/5516981552628"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-3 sm:p-4 shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse"
+      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 bg-white hover:bg-gray-50 rounded-full p-2 sm:p-3 shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse"
       aria-label="Contate-nos via WhatsApp"
     >
-      <MessageCircle className="h-5 w-5 sm:h-6 sm:w-6" />
+      <img 
+        src="/lovable-uploads/1250d4c5-fe86-426b-825d-4cb14b5de79a.png" 
+        alt="WhatsApp" 
+        className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12"
+      />
     </a>
   );
 };

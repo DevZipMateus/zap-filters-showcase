@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
@@ -123,7 +122,11 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center space-x-2 bg-white text-green-600 font-semibold px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-xl hover:bg-green-50 transition-colors w-full sm:w-auto text-sm sm:text-base md:text-lg"
               >
-                <Phone className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 flex-shrink-0" />
+                <img 
+                  src="/lovable-uploads/1250d4c5-fe86-426b-825d-4cb14b5de79a.png" 
+                  alt="WhatsApp" 
+                  className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 flex-shrink-0"
+                />
                 <span className="whitespace-nowrap">Falar no WhatsApp</span>
               </a>
             </div>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Phone, Mail, MapPin, Instagram, Facebook, Clock } from 'lucide-react';
 
@@ -14,7 +13,7 @@ const Footer = () => {
           <div className="lg:col-span-2 sm:pr-4">
             <div className="flex items-center mb-3 sm:mb-4">
               <img 
-                src="/lovable-uploads/788c0055-8be0-451a-9bb9-444b8d9230f6.png" 
+                src="/lovable-uploads/1250d4c5-fe86-426b-825d-4cb14b5de79a.png" 
                 alt="Zap Filtros Multimarcas" 
                 className="h-8 w-auto md:h-10"
               />
@@ -104,7 +103,11 @@ const Footer = () => {
                 className="bg-green-500/80 p-1.5 sm:p-2 rounded-lg hover:bg-green-500 transition-colors flex-shrink-0"
                 aria-label="WhatsApp da Zap Filtros"
               >
-                <Phone className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5" />
+                <img 
+                  src="/lovable-uploads/1250d4c5-fe86-426b-825d-4cb14b5de79a.png" 
+                  alt="WhatsApp" 
+                  className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5"
+                />
               </a>
             </div>
           </div>
