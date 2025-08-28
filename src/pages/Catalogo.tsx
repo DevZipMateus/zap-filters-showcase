@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 import SEO from '../components/SEO';
@@ -13,7 +12,7 @@ const Catalogo = () => {
     {
       id: 1,
       nome: "Avanti IBBL",
-      categoria: "Refis",
+      categoria: "Refis", 
       imagem: "/lovable-uploads/galeria/Cliente_1_1_Avanti IBBL.jpeg",
       descricao: "Refil para purificadores Avanti IBBL"
     },
@@ -307,6 +306,41 @@ const Catalogo = () => {
     },
     {
       id: 43,
+      nome: "Acessório Modelo 8",
+      categoria: "Acessórios",
+      imagem: "/lovable-uploads/galeria/Cliente_2_8_29902731BADC9ADCAC0912AD339473.jpeg",
+      descricao: "Acessório para bebedouros"
+    },
+    {
+      id: 44,
+      nome: "Acessório Modelo 9",
+      categoria: "Acessórios",
+      imagem: "/lovable-uploads/galeria/Cliente_2_9_48566F3413B7FC9D7DB47F699ECA73.jpeg",
+      descricao: "Acessório para bebedouros"
+    },
+    {
+      id: 45,
+      nome: "Acessório Modelo 10",
+      categoria: "Acessórios",
+      imagem: "/lovable-uploads/galeria/Cliente_2_10_831CF3762FF19DD7169F0B182F490F.jpeg",
+      descricao: "Acessório para bebedouros"
+    },
+    {
+      id: 46,
+      nome: "Acessório Modelo 11",
+      categoria: "Acessórios",
+      imagem: "/lovable-uploads/galeria/Cliente_2_11_331CE734AE88826893E0BF17E137D7.jpeg",
+      descricao: "Acessório para bebedouros"
+    },
+    {
+      id: 47,
+      nome: "Acessório Modelo 12",
+      categoria: "Acessórios",
+      imagem: "/lovable-uploads/galeria/Cliente_2_12_5C953B9F1CCC35DBFB963639D7127A.jpeg",
+      descricao: "Acessório para bebedouros"
+    },
+    {
+      id: 48,
       nome: "Refil Multiuso Cliente 2",
       categoria: "Refis",
       imagem: "/lovable-uploads/galeria/Cliente_2_13_Refil Multiuso.jpeg",
@@ -314,154 +348,161 @@ const Catalogo = () => {
     },
     // Cliente 3 - Purificadores e Acessórios
     {
-      id: 44,
+      id: 49,
       nome: "Torneira para Bebedouro",
       categoria: "Acessórios",
       imagem: "/lovable-uploads/galeria/Cliente_3_1_Torneira para bebedouro.jpeg",
       descricao: "Torneira para bebedouro"
     },
     {
-      id: 45,
+      id: 50,
       nome: "Refil Multi Uso Cliente 3",
       categoria: "Refis",
       imagem: "/lovable-uploads/galeria/Cliente_3_2_Refil Multi uso.jpeg",
       descricao: "Refil multi uso"
     },
     {
-      id: 46,
+      id: 51,
       nome: "Refil Europa Nobless Cliente 3",
       categoria: "Refis",
       imagem: "/lovable-uploads/galeria/Cliente_3_3_Refil Europa Nobless.jpeg",
       descricao: "Refil Europa Nobless"
     },
     {
-      id: 47,
+      id: 52,
       nome: "Refil Europa Bliss Cliente 3",
       categoria: "Refis",
       imagem: "/lovable-uploads/galeria/Cliente_3_4_Refil Europa Bliss.jpeg",
       descricao: "Refil Europa Bliss"
     },
     {
-      id: 48,
+      id: 53,
       nome: "Refil Colormaq Compressor",
       categoria: "Refis",
       imagem: "/lovable-uploads/galeria/Cliente_3_5_Refil Colormaq Compressor.jpeg",
       descricao: "Refil Colormaq com compressor"
     },
     {
-      id: 49,
+      id: 54,
       nome: "Refil Colormaq Cliente 3",
       categoria: "Refis",
       imagem: "/lovable-uploads/galeria/Cliente_3_6_Refil Colormaq.jpeg",
       descricao: "Refil Colormaq"
     },
     {
-      id: 50,
+      id: 55,
       nome: "Refil Bebedouro de Pressão",
       categoria: "Refis",
       imagem: "/lovable-uploads/galeria/Cliente_3_7_Refil Bebedouro de presso.jpeg",
       descricao: "Refil para bebedouro de pressão"
     },
     {
-      id: 51,
+      id: 56,
       nome: "Purificador Top Life Preto",
       categoria: "Purificadores",
       imagem: "/lovable-uploads/galeria/Cliente_3_8_Purificador Top Life preto.jpeg",
       descricao: "Purificador Top Life - modelo preto"
     },
     {
-      id: 52,
+      id: 57,
       nome: "Purificador Top Life Prata",
       categoria: "Purificadores",
       imagem: "/lovable-uploads/galeria/Cliente_3_9_Purificador Top Life prata.jpeg",
       descricao: "Purificador Top Life - modelo prata"
     },
     {
-      id: 53,
+      id: 58,
       nome: "Purificador Top Life Branco",
       categoria: "Purificadores",
       imagem: "/lovable-uploads/galeria/Cliente_3_10_Purificador Top Life branco.jpeg",
       descricao: "Purificador Top Life - modelo branco"
     },
     {
-      id: 54,
+      id: 59,
       nome: "Filtro 9 3/4 para Cavalete Bebedouro",
       categoria: "Filtros",
       imagem: "/lovable-uploads/galeria/Cliente_3_11_Filtro 9 3 4 para cavalete beb.jpeg",
       descricao: "Filtro 9 3/4 polegadas para cavalete de bebedouro"
     },
     {
-      id: 55,
+      id: 60,
       nome: "Filtro 9 3/4 Azul para Cavalete",
       categoria: "Filtros",
       imagem: "/lovable-uploads/galeria/Cliente_3_12_Filtro 9 3 4 azul para cavalet.jpeg",
       descricao: "Filtro 9 3/4 polegadas azul para cavalete"
     },
     {
-      id: 56,
+      id: 61,
+      nome: "Acessório Especial",
+      categoria: "Acessórios",
+      imagem: "/lovable-uploads/galeria/Cliente_3_13_FE3EC3B8C8349E53633AE7C019613D.jpeg",
+      descricao: "Acessório especial para purificadores"
+    },
+    {
+      id: 62,
       nome: "Bebedouro Libell Stillo",
       categoria: "Bebedouros",
       imagem: "/lovable-uploads/galeria/Cliente_3_14_Bebedouro Libell Stillo.jpeg",
       descricao: "Bebedouro Libell Stillo"
     },
     {
-      id: 57,
+      id: 63,
       nome: "Bebedouro Libell Master Inox",
       categoria: "Bebedouros",
       imagem: "/lovable-uploads/galeria/Cliente_3_15_Bebedouro libell master inox.jpeg",
       descricao: "Bebedouro Libell Master em aço inox"
     },
     {
-      id: 58,
+      id: 64,
       nome: "Bebedouro K-200",
       categoria: "Bebedouros",
       imagem: "/lovable-uploads/galeria/Cliente_3_16_Bebedouro K-200.jpeg",
       descricao: "Bebedouro industrial K-200"
     },
     {
-      id: 59,
+      id: 65,
       nome: "Bebedouro K-100",
       categoria: "Bebedouros",
       imagem: "/lovable-uploads/galeria/Cliente_3_17_Bebedouro K-100.jpeg",
       descricao: "Bebedouro industrial K-100"
     },
     {
-      id: 60,
+      id: 66,
       nome: "Bebedouro K-31I",
       categoria: "Bebedouros",
       imagem: "/lovable-uploads/galeria/Cliente_3_18_Bebedouro K-31I.jpeg",
       descricao: "Bebedouro industrial K-31I"
     },
     {
-      id: 61,
+      id: 67,
       nome: "Bebedouro K-31",
       categoria: "Bebedouros",
       imagem: "/lovable-uploads/galeria/Cliente_3_19_Bebedouro K-31.jpeg",
       descricao: "Bebedouro industrial K-31"
     },
     {
-      id: 62,
+      id: 68,
       nome: "Bebedouro K-30I",
       categoria: "Bebedouros",
       imagem: "/lovable-uploads/galeria/Cliente_3_20_Bebedouro K-30I.jpeg",
       descricao: "Bebedouro industrial K-30I"
     },
     {
-      id: 63,
+      id: 69,
       nome: "Bebedouro K-30",
       categoria: "Bebedouros",
       imagem: "/lovable-uploads/galeria/Cliente_3_21_Bebedouro K-30.jpeg",
       descricao: "Bebedouro industrial K-30"
     },
     {
-      id: 64,
+      id: 70,
       nome: "Bebedouro K-25",
       categoria: "Bebedouros",
       imagem: "/lovable-uploads/galeria/Cliente_3_22_Bebedouro K-25.jpeg",
       descricao: "Bebedouro industrial K-25"
     },
     {
-      id: 65,
+      id: 71,
       nome: "Bebedouro K-21",
       categoria: "Bebedouros",
       imagem: "/lovable-uploads/galeria/Cliente_3_23_Bebedouro K-21.jpeg",
