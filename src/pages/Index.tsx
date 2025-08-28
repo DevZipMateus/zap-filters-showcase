@@ -5,6 +5,7 @@ import SEO from '../components/SEO';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
+import CatalogoSection from '../components/CatalogoSection';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
@@ -19,6 +20,7 @@ const Index = () => {
         <main>
           <Hero />
           <Services />
+          <CatalogoSection />
           <About />
           <Contact />
         </main>

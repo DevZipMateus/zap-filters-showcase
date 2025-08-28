@@ -1,10 +1,12 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,6 +17,11 @@ const Header = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
+    if (location.pathname !== '/') {
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
+    
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -28,11 +35,13 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <img 
-              src="/lovable-uploads/c33aa6b9-c21e-4795-a9f9-ddddc1d68a38.png" 
-              alt="Zap Filtros Multimarcas" 
-              className="h-10 w-auto md:h-12"
-            />
+            <Link to="/">
+              <img 
+                src="/lovable-uploads/c33aa6b9-c21e-4795-a9f9-ddddc1d68a38.png" 
+                alt="Zap Filtros Multimarcas" 
+                className="h-10 w-auto md:h-12"
+              />
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -49,6 +58,12 @@ const Header = () => {
             >
               Serviços
             </button>
+            <Link 
+              to="/catalogo"
+              className="text-foreground hover:text-primary transition-colors duration-300"
+            >
+              Catálogo
+            </Link>
             <button 
               onClick={() => scrollToSection('sobre')}
               className="text-foreground hover:text-primary transition-colors duration-300"
@@ -102,6 +117,13 @@ const Header = () => {
               >
                 Serviços
               </button>
+              <Link
+                to="/catalogo"
+                className="block w-full text-left px-4 py-2 text-foreground hover:text-primary hover:bg-blue-50 transition-colors duration-300"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Catálogo
+              </Link>
               <button
                 onClick={() => scrollToSection('sobre')}
                 className="block w-full text-left px-4 py-2 text-foreground hover:text-primary hover:bg-blue-50 transition-colors duration-300"
