@@ -69,10 +69,6 @@ export default {
 						700: 'hsl(var(--brand-blue-700))',
 						900: 'hsl(var(--brand-blue-900))',
 					}
-				},
-				// Header specific color
-				header: {
-					bg: 'hsl(var(--header-bg))'
 				}
 			},
 			borderRadius: {
