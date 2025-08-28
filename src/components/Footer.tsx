@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Droplets, Phone, Mail, MapPin, Instagram, Facebook, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram, Facebook, Clock } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,14 +12,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2 sm:pr-4">
-            <div className="flex items-center space-x-2 mb-3 sm:mb-4">
-              <div className="bg-white/20 rounded-lg p-2">
-                <Droplets className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-white" />
-              </div>
-              <div>
-                <h1 className="font-bold text-base sm:text-lg md:text-xl">Zap Filtros</h1>
-                <p className="text-xs sm:text-sm text-blue-200">Multimarcas</p>
-              </div>
+            <div className="flex items-center mb-3 sm:mb-4">
+              <img 
+                src="/lovable-uploads/788c0055-8be0-451a-9bb9-444b8d9230f6.png" 
+                alt="Zap Filtros Multimarcas" 
+                className="h-8 w-auto md:h-10"
+              />
             </div>
             
             <p className="text-blue-100 mb-3 sm:mb-4 md:mb-6 max-w-md text-xs sm:text-sm md:text-base leading-relaxed">
@@ -45,8 +43,8 @@ const Footer = () => {
               <div className="flex items-start space-x-2 sm:space-x-3">
                 <MapPin className="h-3 w-3 sm:h-4 sm:w-4 text-blue-200 mt-0.5 flex-shrink-0" />
                 <div className="text-blue-100 text-xs sm:text-sm md:text-base">
-                  <div className="break-words">Avenida Jornalista Roque de Rosa, 881</div>
-                  <div className="break-words">Santo André</div>
+                  <div className="break-words">Av. Jrn. Roque de Rosa, 881</div>
+                  <div className="break-words">Jardim Paulista, Ibitinga - SP</div>
                 </div>
               </div>
             </div>

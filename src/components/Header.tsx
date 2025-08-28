@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Droplets } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,14 +27,12 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="bg-primary rounded-lg p-2">
-              <Droplets className="h-6 w-6 text-white" />
-            </div>
-            <div>
-              <h1 className="font-bold text-xl text-primary">Zap Filtros</h1>
-              <p className="text-xs text-muted-foreground">Multimarcas</p>
-            </div>
+          <div className="flex items-center">
+            <img 
+              src="/lovable-uploads/788c0055-8be0-451a-9bb9-444b8d9230f6.png" 
+              alt="Zap Filtros Multimarcas" 
+              className="h-10 w-auto md:h-12"
+            />
           </div>
 
           {/* Desktop Navigation */}
