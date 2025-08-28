@@ -7,7 +7,7 @@ const WhatsAppFloat = () => {
       href="https://wa.me/5516981552628"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 bg-white hover:bg-gray-50 rounded-full p-2 sm:p-3 shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse"
+      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 bg-white hover:bg-gray-50 rounded-full p-2 sm:p-3 shadow-lg hover:shadow-xl transition-all duration-300"
       aria-label="Contate-nos via WhatsApp"
     >
       <img 
