@@ -38,7 +38,7 @@ const CartFloat: React.FC = () => {
   return (
     <>
       {/* Botão flutuante do carrinho */}
-      <div className="fixed bottom-20 right-4 z-50">
+      <div className="fixed bottom-32 right-4 z-50">
         <Button
           onClick={() => setIsOpen(true)}
           className="rounded-full h-14 w-14 bg-green-600 hover:bg-green-700 shadow-lg relative"
