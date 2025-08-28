@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="lg:col-span-2 sm:pr-4">
             <div className="flex items-center mb-3 sm:mb-4">
               <img 
-                src="/lovable-uploads/1250d4c5-fe86-426b-825d-4cb14b5de79a.png" 
+                src="/lovable-uploads/c33aa6b9-c21e-4795-a9f9-ddddc1d68a38.png" 
                 alt="Zap Filtros Multimarcas" 
                 className="h-8 w-auto md:h-10"
               />

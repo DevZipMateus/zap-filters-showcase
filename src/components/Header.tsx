@@ -29,7 +29,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/1250d4c5-fe86-426b-825d-4cb14b5de79a.png" 
+              src="/lovable-uploads/c33aa6b9-c21e-4795-a9f9-ddddc1d68a38.png" 
               alt="Zap Filtros Multimarcas" 
               className="h-10 w-auto md:h-12"
             />
