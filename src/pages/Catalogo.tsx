@@ -4,9 +4,14 @@ import SEO from '../components/SEO';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import WhatsAppFloat from '../components/WhatsAppFloat';
+import CartFloat from '../components/CartFloat';
+import QuantitySelector from '../components/QuantitySelector';
+import { useCart } from '../contexts/CartContext';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 
 const Catalogo = () => {
+  const { addToCart } = useCart();
+
   const produtos = [
     // Cliente 1 - Refis
     {
@@ -517,6 +522,10 @@ const Catalogo = () => {
     ? produtos 
     : produtos.filter(produto => produto.categoria === categoriaAtiva);
 
+  const handleAddToCart = (produto: typeof produtos[0], quantidade: number) => {
+    addToCart(produto, quantidade);
+  };
+
   return (
     <HelmetProvider>
       <div className="min-h-screen">
@@ -575,8 +584,13 @@ const Catalogo = () => {
                         {produto.categoria}
                       </CardDescription>
                     </CardHeader>
-                    <CardContent>
+                    <CardContent className="space-y-4">
                       <p className="text-gray-600 mb-4">{produto.descricao}</p>
+                      <QuantitySelector
+                        onQuantityChange={() => {}}
+                        onAddToCart={(quantidade) => handleAddToCart(produto, quantidade)}
+                        productName={produto.nome}
+                      />
                       <a
                         href="https://wa.me/5516981552628"
                         target="_blank"
@@ -632,6 +646,7 @@ const Catalogo = () => {
         </main>
         <Footer />
         <WhatsAppFloat />
+        <CartFloat />
       </div>
     </HelmetProvider>
   );
