@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Wrench, Droplets, ShoppingCart, Sparkles, Factory, Filter } from 'lucide-react';
 
@@ -8,7 +7,7 @@ const Services = () => {
       icon: Wrench,
       title: "Manutenção Especializada",
       description: "Conserto de vazamentos e manutenção preventiva em bebedouros e purificadores de todas as marcas",
-      features: ["Diagnóstico gratuito", "Peças originais", "Garantia do serviço"]
+      features: ["Diagnóstico gratuito", "Peças similares e originais", "Garantia do serviço"]
     },
     {
       icon: Sparkles,
@@ -20,7 +19,7 @@ const Services = () => {
       icon: Filter,
       title: "Troca de Filtros e Refis",
       description: "Substituição de filtros e refis com produtos de qualidade para manter a pureza da água",
-      features: ["Filtros originais", "Todas as marcas", "Entrega rápida"]
+      features: ["Filtros similares e originais", "Todas as marcas", "Entrega rápida"]
     },
     {
       icon: ShoppingCart,
@@ -38,7 +37,7 @@ const Services = () => {
       icon: Droplets,
       title: "Acessórios Multimarcas",
       description: "Peças de reposição e acessórios para equipamentos de todas as marcas",
-      features: ["Estoque completo", "Peças originais", "Pronta entrega"]
+      features: ["Estoque completo", "Peças similares e originais", "Pronta entrega"]
     }
   ];
 
