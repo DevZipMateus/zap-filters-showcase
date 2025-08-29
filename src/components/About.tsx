@@ -1,17 +1,24 @@
-
 import React from 'react';
 import { Award, Users, Clock, MapPin } from 'lucide-react';
-
 const About = () => {
-  const stats = [
-    { icon: Award, value: "100%", label: "Multimarcas" },
-    { icon: Users, value: "1000+", label: "Clientes Atendidos" },
-    { icon: Clock, value: "24h", label: "Suporte Técnico" },
-    { icon: MapPin, value: "Ibitinga", label: "e Região" }
-  ];
-
-  return (
-    <section id="sobre" className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28 bg-white">
+  const stats = [{
+    icon: Award,
+    value: "100%",
+    label: "Multimarcas"
+  }, {
+    icon: Users,
+    value: "1000+",
+    label: "Clientes Atendidos"
+  }, {
+    icon: Clock,
+    value: "24h",
+    label: "Suporte Técnico"
+  }, {
+    icon: MapPin,
+    value: "Ibitinga",
+    label: "e Região"
+  }];
+  return <section id="sobre" className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 items-center">
           {/* Content */}
@@ -51,36 +58,27 @@ const About = () => {
                 <div className="w-2 h-2 bg-accent rounded-full mt-2 sm:mt-3 flex-shrink-0"></div>
                 <div className="min-w-0">
                   <h4 className="font-semibold text-primary text-sm sm:text-base md:text-lg break-words">Qualidade Garantida</h4>
-                  <p className="text-muted-foreground text-xs sm:text-sm md:text-base break-words">Produtos originais e garantia nos serviços</p>
+                  <p className="text-muted-foreground text-xs sm:text-sm md:text-base break-words">Produtos originais e similares e garantia nos serviços</p>
                 </div>
               </div>
             </div>
 
-            <a 
-              href="https://wa.me/5516981552628" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="btn-primary w-full sm:w-auto text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4"
-            >
+            <a href="https://wa.me/5516981552628" target="_blank" rel="noopener noreferrer" className="btn-primary w-full sm:w-auto text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4">
               Fale com Nossa Equipe
             </a>
           </div>
 
           {/* Stats Grid */}
           <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6 animate-scale-in order-1 lg:order-2">
-            {stats.map((stat, index) => (
-              <div 
-                key={index}
-                className="bg-card-gradient border border-blue-100/50 rounded-2xl p-3 sm:p-4 md:p-6 lg:p-8 text-center"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
+            {stats.map((stat, index) => <div key={index} className="bg-card-gradient border border-blue-100/50 rounded-2xl p-3 sm:p-4 md:p-6 lg:p-8 text-center" style={{
+            animationDelay: `${index * 0.1}s`
+          }}>
                 <div className="bg-primary/10 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-xl flex items-center justify-center mx-auto mb-2 sm:mb-3 md:mb-4">
                   <stat.icon className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-7 lg:w-7 text-primary" />
                 </div>
                 <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-primary mb-1 sm:mb-2 break-words">{stat.value}</div>
                 <div className="text-xs sm:text-sm md:text-base text-muted-foreground break-words">{stat.label}</div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
 
@@ -110,8 +108,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
