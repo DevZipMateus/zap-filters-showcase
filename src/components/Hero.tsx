@@ -73,7 +73,7 @@ const Hero = () => {
           </div>
 
           {/* Company info */}
-          <div className="mt-8 sm:mt-12 lg:mt-16 text-blue-200 text-xs sm:text-sm md:text-base px-2 sm:px-4 max-w-3xl mx-auto">
+          <div className="mt-8 sm:mt-12 lg:mt-16 text-white text-xs sm:text-sm md:text-base px-2 sm:px-4 max-w-3xl mx-auto">
             <p className="mb-2 sm:mb-3">📍 Avenida Jornalista Roque de Rosa, 881 - Santo André</p>
             <div className="flex flex-col sm:flex-row sm:justify-center sm:space-x-4 lg:space-x-6 space-y-1 sm:space-y-0">
               <p className="break-words">📞 (16) 98155-2628</p>
