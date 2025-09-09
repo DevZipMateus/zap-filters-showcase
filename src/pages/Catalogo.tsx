@@ -584,9 +584,9 @@ const Catalogo = () => {
                         {produto.categoria}
                       </CardDescription>
                     </CardHeader>
-                    <CardContent className="flex flex-col h-full">
-                      <p className="text-gray-600 mb-4 flex-grow">{produto.descricao}</p>
-                      <div className="mt-auto space-y-3">
+                    <CardContent className="flex flex-col h-full p-4">
+                      <p className="text-gray-600 text-sm mb-3">{produto.descricao}</p>
+                      <div className="mt-auto space-y-2">
                         <QuantitySelector
                           onQuantityChange={() => {}}
                           onAddToCart={(quantidade) => handleAddToCart(produto, quantidade)}
@@ -596,7 +596,7 @@ const Catalogo = () => {
                           href="https://wa.me/5516981552628"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="btn-primary w-full text-center flex items-center justify-center space-x-2"
+                          className="btn-primary w-full text-center flex items-center justify-center space-x-2 text-sm py-2"
                         >
                           <img 
                             src="/lovable-uploads/1250d4c5-fe86-426b-825d-4cb14b5de79a.png" 
