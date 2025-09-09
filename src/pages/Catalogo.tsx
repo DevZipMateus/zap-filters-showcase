@@ -570,7 +570,7 @@ const Catalogo = () => {
             <div className="container mx-auto px-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {produtosFiltrados.map((produto) => (
-                  <Card key={produto.id} className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                  <Card key={produto.id} className="overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
                     <div className="aspect-square overflow-hidden">
                       <img
                         src={produto.imagem}
@@ -584,26 +584,28 @@ const Catalogo = () => {
                         {produto.categoria}
                       </CardDescription>
                     </CardHeader>
-                    <CardContent className="space-y-4">
-                      <p className="text-gray-600 mb-4">{produto.descricao}</p>
-                      <QuantitySelector
-                        onQuantityChange={() => {}}
-                        onAddToCart={(quantidade) => handleAddToCart(produto, quantidade)}
-                        productName={produto.nome}
-                      />
-                      <a
-                        href="https://wa.me/5516981552628"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn-primary w-full text-center flex items-center justify-center space-x-2"
-                      >
-                        <img 
-                          src="/lovable-uploads/1250d4c5-fe86-426b-825d-4cb14b5de79a.png" 
-                          alt="WhatsApp" 
-                          className="h-4 w-4"
+                    <CardContent className="flex flex-col h-full">
+                      <p className="text-gray-600 mb-4 flex-grow">{produto.descricao}</p>
+                      <div className="mt-auto space-y-3">
+                        <QuantitySelector
+                          onQuantityChange={() => {}}
+                          onAddToCart={(quantidade) => handleAddToCart(produto, quantidade)}
+                          productName={produto.nome}
                         />
-                        <span>Consultar Preço</span>
-                      </a>
+                        <a
+                          href="https://wa.me/5516981552628"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn-primary w-full text-center flex items-center justify-center space-x-2"
+                        >
+                          <img 
+                            src="/lovable-uploads/1250d4c5-fe86-426b-825d-4cb14b5de79a.png" 
+                            alt="WhatsApp" 
+                            className="h-4 w-4"
+                          />
+                          <span>Consultar Preço</span>
+                        </a>
+                      </div>
                     </CardContent>
                   </Card>
                 ))}
